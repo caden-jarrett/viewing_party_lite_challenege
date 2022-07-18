@@ -62,7 +62,7 @@ RSpec.describe 'register new user' do
       fill_in "Password Confirmation", with: "Sandsofscarab"
 
       click_button "Register New User"
-
+      binding.pry
       expect(page).to have_content("Email has already been taken")
     end
   end
