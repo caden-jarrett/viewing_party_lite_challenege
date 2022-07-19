@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
  get '/', to: 'welcome#index'
  get '/register', to: 'users#new'
+ post '/register', to: 'users#create'
  get '/users/:id', to: 'users#show'
+ get '/login', to: 'users#login_form'
+ post '/login', to: 'users#login'
 #  post '/users/:id/movies/:id/parties/new', to: 'parties#create'
  
  resources :users, only: %i[create show new] do 
@@ -11,9 +14,8 @@ Rails.application.routes.draw do
   get '/movies', to: 'movies#top_rated', as: 'top_rated' 
   get '/movies_search', to: 'movies#search', as: 'search'
   resources :movies, only: %i[index show] do
-      resources :parties, only: %i[create new]
-    end
-
+    resources :parties, only: %i[create new]
+  end
 end
 
 end
