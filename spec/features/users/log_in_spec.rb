@@ -15,7 +15,7 @@ RSpec.describe "Logging In" do
 
     click_on "Log In"
     
-    expect(current_path).to eq('/')
+    expect(current_path).to eq("/users/#{user.id}")
 
     expect(page).to have_content("Welcome, #{user.username}")
   end
@@ -31,7 +31,7 @@ RSpec.describe "Logging In" do
 
     click_on "Log In"
 
-    expect(current_path).to eq('/')
+    expect(current_path).to eq('/login')
 
     expect(page).to have_content("Sorry, your credentials are bad.")
   end
