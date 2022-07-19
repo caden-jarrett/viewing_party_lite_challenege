@@ -18,12 +18,6 @@ RSpec.describe "Logging In" do
     expect(current_path).to eq("/users/#{user.id}")
 
     expect(page).to have_content("Welcome, #{user.username}")
-
-    # sessions test
-    click_on "Home"
-
-    save_and_open_page
-    expect(page).to have_content("Test has been logged in!")
   end
 
   it "cannot log in with bad credentials" do
