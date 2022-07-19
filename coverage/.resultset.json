@@ -1,57 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/helpers/application_helper.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          4,
-          null,
-          4,
-          1,
-          1,
-          null,
-          3,
-          3,
-          3,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/models/user.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -66,32 +22,79 @@
           null
         ]
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/models/application_record.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/models/party_user.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
+          null,
           1,
-          1,
+          2,
+          null,
+          null,
           null
         ]
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/models/party.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/application_controller.rb": {
         "lines": [
-          1,
-          1,
           1,
           null,
           1,
+          0,
+          null,
           null
         ]
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/mailers/application_mailer.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -101,7 +104,29 @@
         "branches": {
         }
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/facades/movie_facade.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/models/party.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/models/party_user.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/facades/movie_facade.rb": {
         "lines": [
           0,
           null,
@@ -121,7 +146,7 @@
         "branches": {
         }
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/poros/movie.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/poros/movie.rb": {
         "lines": [
           0,
           0,
@@ -142,154 +167,6 @@
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/controllers/movies_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/controllers/welcome_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/controllers/parties_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/services/movie_service.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -300,7 +177,142 @@
         "branches": {
         }
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/channels/application_cable/connection.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/movies_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/parties_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/services/movie_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -310,7 +322,7 @@
         "branches": {
         }
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite/app/channels/application_cable/channel.rb": {
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -321,6 +333,6 @@
         }
       }
     },
-    "timestamp": 1658181801
+    "timestamp": 1658253013
   }
 }
