@@ -12,9 +12,8 @@ Rails.application.routes.draw do
   get '/movies', to: 'movies#top_rated', as: 'top_rated' 
   get '/movies_search', to: 'movies#search', as: 'search'
   resources :movies, only: %i[index show] do
-      resources :parties, only: %i[create new]
-    end
-
+    resources :parties, only: %i[create new]
+  end
 end
 
 end
