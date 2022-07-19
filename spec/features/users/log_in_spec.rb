@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Logging In" do
   it "can log in with valid credentials" do
-    @user_same_email = User.create!(email: 'test@gmail.com', name: 'Test', username: 'Testypoo', password:'testtest')
+    user = User.create!(email: 'test@gmail.com', name: 'Test', username: 'Testypoo', password:'testtest')
 
     visit '/'
 
@@ -14,8 +14,8 @@ RSpec.describe "Logging In" do
     fill_in :password, with: user.password
 
     click_on "Log In"
-
-    expect(current_path).to eq(root_path)
+    
+    expect(current_path).to eq('/')
 
     expect(page).to have_content("Welcome, #{user.username}")
   end

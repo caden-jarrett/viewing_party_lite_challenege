@@ -34,7 +34,7 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null
@@ -44,6 +44,50 @@
         "lines": [
           1,
           null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
           1,
           0,
           null,
@@ -176,42 +220,6 @@
         "branches": {
         }
       },
-      "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/users_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/cadenjarrett/mod_3_work/challenges/viewing_party_lite_challenge/app/controllers/parties_controller.rb": {
         "lines": [
           0,
@@ -325,6 +333,6 @@
         }
       }
     },
-    "timestamp": 1658252597
+    "timestamp": 1658253013
   }
 }
