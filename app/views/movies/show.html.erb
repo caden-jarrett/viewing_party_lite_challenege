@@ -1,6 +1,6 @@
-<%= link_to "Discover", '/users/movies/:id/new_party' %>
+<%= link_to "Discover", "/movies/#{@data.title}/new_party" %>
 
-<%= link_to "Create Viewing Party", "/users/movies/#{@data.id}/new_party" %>
+<%= link_to "Create Viewing Party", "/movies/#{@data.id}/new_party" %>
 
 <div id='movie-title'>
     <h1> Movie Title </h1>

@@ -2,7 +2,7 @@ class PartiesController < ApplicationController
 
     def new
         @user = User.find(session[:user_id])
-        @movie = MovieFacade.movie_info(params[:movie_id])
+        @movie = MovieFacade.movie_info(params[:id])
         @all_users = User.all
     end
 

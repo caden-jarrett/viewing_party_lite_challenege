@@ -1,7 +1,7 @@
 
 New Viewing Party for <%= @movie.title%>
 
-<%= form_with url: "/users/movies/#{@movie.id}/parties", model: @viewingparty, local: true do |form| %>
+<%= form_with url: "/movies/#{@movie.id}/parties", model: @viewingparty, local: true do |form| %>
 
 <div>
   <%= form.label :duration %>

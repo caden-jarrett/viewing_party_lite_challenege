@@ -16,10 +16,10 @@ Rails.application.routes.draw do
   get '/users/discover', to: 'movies#discover', as: 'movies_discover'
 
   get '/users/movies', to: 'movies#top_rated', as: 'top_rated'
-  post '/users/movies/:id/parties', to: 'parties#create'
+  post '/movies/:id/parties', to: 'parties#create'
   get '/users/movies_search', to: 'movies#search', as: 'search'
   get '/movies/:id', to: 'movies#show'
-  get '/users/movies/:id/new_party', to: 'parties#new'
+  get '/movies/:id/new_party', to: 'parties#new'
 
   resources :movies, only: %i[index show] do
     resources :parties, only: %i[create new]
