@@ -13,7 +13,7 @@ RSpec.describe 'Creating a viewing party from a movie show page', :vcr do
 
     it 'has a button to create a viewing party', :vcr do
         visit '/users/discover'
-        binding.pry
+
         click_on 'Top Rated'
 
         click_on 'The Shawshank Redemption'

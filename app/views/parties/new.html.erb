@@ -37,7 +37,6 @@ New Viewing Party for <%= @movie.title%>
 <% form.hidden_field :movie_title, value: @movie.title %>
 <% form.hidden_field :movie_id, value: @movie.id %>
 <% form.hidden_field :user_id, value: session[:user_id]%>
-<% binding.pry %>
 
   <%= form.submit 'Create Party' %>
 
