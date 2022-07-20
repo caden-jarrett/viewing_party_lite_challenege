@@ -2,6 +2,7 @@
 
 <% if current_user %>
   <%= "#{current_user.name} has been logged in!"%>
+  <%= link_to "Log Out", '/logout', method: :delete%>
 <% end %>
 
 <% if session[:user_id] == nil %>

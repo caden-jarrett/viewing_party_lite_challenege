@@ -1,7 +1,7 @@
 
 New Viewing Party for <%= @movie.title%>
 
-<%= form_with url: user_movie_parties_path(@user.id, @movie.id), model: @viewing_party, local: true do |form| %>
+<%= form_with url: "/users/movies/#{@movie.id}/parties", model: @viewingparty, local: true do |form| %>
 
 <div>
   <%= form.label :duration %>
@@ -18,6 +18,7 @@ New Viewing Party for <%= @movie.title%>
   <%= form.time_field :time %>
 </div><br>
 
+
 <div>
   <%= form.label :user_name %>
   <%= form.text_field :user_name %>
@@ -27,17 +28,16 @@ New Viewing Party for <%= @movie.title%>
 <div id="user-invites">
   Invite Friends!
   <% @all_users.each do |user| %>
-    <% unless user.id == @user.id %>
+    <% unless session[:user_id] == @user.id %>
       <%= form.label user.name %>
-      <%=form.check_box("invites", {:multiple => true}, user.id, nil) %>
+      <%=form.check_box("invites", {:multiple => true}, session[:user_id], nil) %>
     <% end %>
   <% end %>
 </div>
-
-<% form.hidden_field :movie_title, value: '#' %>
+<% form.hidden_field :movie_title, value: @movie.title %>
 <% form.hidden_field :movie_id, value: @movie.id %>
-<% form.hidden_field :user_id, value: @user.id %>
-
+<% form.hidden_field :user_id, value: session[:user_id]%>
+<% binding.pry %>
 
   <%= form.submit 'Create Party' %>
 

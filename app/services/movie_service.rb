@@ -7,10 +7,9 @@ class MovieService
 
     response1 = conn.get("/3/search/movie?query=#{keyword}")
     response2 = conn.get("/3/search/movie?page=2&query=#{keyword}")
-    
     data1 = JSON.parse(response1.body, symbolize_names: true)
     data2 = JSON.parse(response2.body, symbolize_names: true)
-    
+
     data1[:results] + data2[:results]
   end
 
@@ -41,8 +40,7 @@ class MovieService
     data = JSON.parse(response.body, symbolize_names: true)
     cast_data = JSON.parse(cast_response.body, symbolize_names: true)
     review_data = JSON.parse(review_response.body, symbolize_names: true)
-
-    data[:cast] = cast_data[:cast].first(10)
+    data[:cast] = cast_data[:cast]
     data[:review_count] = review_data[:total_results]
     data[:review_content] = review_data[:results]
     data

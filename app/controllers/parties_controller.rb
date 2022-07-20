@@ -1,14 +1,14 @@
 class PartiesController < ApplicationController
 
     def new
-        @user = User.find(params[:user_id])
+        @user = User.find(session[:user_id])
         @movie = MovieFacade.movie_info(params[:movie_id])
         @all_users = User.all
     end
 
     def create 
-        user = User.find(params[:user_id])
-        movie = MovieFacade.movie_info(params[:movie_id])
+        user = User.find(session[:user_id])
+        movie = MovieFacade.movie_info(params[:id])
         viewing_party = user.parties.create({ 
                                     duration: params[:duration],
                                     date: params[:date],
@@ -19,7 +19,7 @@ class PartiesController < ApplicationController
                                     movie_title: movie.title
                                     })
 
-        redirect_to "/users/#{user.id}"
+        redirect_to "/dashboard"
     end
 
 

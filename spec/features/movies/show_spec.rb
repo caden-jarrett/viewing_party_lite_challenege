@@ -2,15 +2,21 @@ require 'rails_helper'
 
 RSpec.describe 'Movie details page', :vcr do
     before :each do
-        @user1 = User.create!(email: 'jake.taffer@gmail.com', name: 'Jake', username: 'jakeypoo', password:'54321')
+      @user = User.create!(name: "Bernie", email: "bernie@gmail.com", username:'bernster', password:'trumpsucks420')
+      visit '/'
+      click_on "I already have an account"
+      expect(current_path).to eq(login_path)
+      fill_in :username, with: @user.username
+      fill_in :password, with: @user.password
+      click_on "Log In" 
     end
 
     it 'has a button to create a viewing party' do
-        visit user_movies_discover_path(@user1.id)
+        visit "/users/discover"
         click_on 'Top Rated'
         
         click_on 'The Shawshank Redemption'
-        expect(current_path).to eq(user_movie_path(@user1.id, 278))
+        expect(current_path).to eq(movie_path(278))
 
         expect(page).to have_link("Discover")
 

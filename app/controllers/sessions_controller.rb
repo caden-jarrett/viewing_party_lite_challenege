@@ -8,10 +8,15 @@ class SessionsController < ApplicationController
         if user&.authenticate(params[:password])
             session[:user_id] = user.id
             flash[:success] = "Welcome, #{user.username}!"
-            redirect_to "/users/#{user.id}"
+            redirect_to "/dashboard"
         else
             redirect_to '/login'
             flash[:error] = "Sorry, your credentials are bad."
         end
+    end
+
+    def destroy 
+        session.destroy
+        redirect_to '/'
     end
 end
